@@ -1,38 +1,169 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700;900&display=swap");
+body,
+html {
+  margin: 0px;
+  font-family: "Source Code Pro", monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  font-family: "Source Code Pro", monospace;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.page {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.page h2 {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.page .chooseColor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  padding: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 26px;
+  -webkit-box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.5);
+}
+
+.page .chooseColor div {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.page .chooseColor div + div {
+  margin-left: 10px;
+}
+
+.page .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-top: 40px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 15px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.3);
+}
+
+.page .container h1 {
+  font-size: 18px;
+  line-height: 1em;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.page .container span {
+  font-size: 14px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.page .container button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border: none;
+  border-radius: 25px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.page .container button:hover {
+  opacity: 0.8;
+}
+
+.page .container button span {
+  font-weight: 700;
+  margin-left: 10px;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.page .container button svg {
+  width: 20px;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+@media only screen and (min-width: 768px) {
+  .page .container {
+    width: 80%;
   }
-  to {
-    transform: rotate(360deg);
+  .page .container h1 {
+    font-size: 36px;
+  }
+  .page .container span {
+    font-size: 18px;
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .page .container {
+    width: 60%;
+  }
+  .page .container h1 {
+    font-size: 36px;
+  }
+  .page .container span {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=App.css.map */
