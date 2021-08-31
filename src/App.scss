@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700;900&display=swap");
 
 body {
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
   margin: 0px;
+  transition: all 0.5s ease;
 }
 html {
-  height: -webkit-fill-available;
   font-family: "Source Code Pro", monospace;
 }
 button {
@@ -16,7 +14,6 @@ a {
   text-decoration: none;
 }
 .page {
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;

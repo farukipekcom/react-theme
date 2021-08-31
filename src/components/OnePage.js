@@ -1,10 +1,23 @@
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import { useDispatch } from "react-redux";
 import { themeChange } from "../redux/theme/themeSlice";
 import ChooseColor from "./ChooseColor";
-const Page = styled.div`
-  background-color: ${(props) => props.theme.color1};
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    display:flex;
+    align-items:center;
+    background-color: ${(props) => props.theme.color1};
+  }
+
+  html {
+    height: -webkit-fill-available;
+  }
 `;
+
+const Page = styled.div``;
 const TitleNew = styled.h2`
   color: ${(props) => props.theme.color2};
 `;
@@ -45,6 +58,7 @@ function OnePage() {
   }
   return (
     <Page className="page">
+      <GlobalStyle />
       <TitleNew>Choose Theme Color</TitleNew>
       <div className="chooseColor">
         <ChooseColor changeTheme={changeTheme} />
