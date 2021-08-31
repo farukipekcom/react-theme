@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to Crypto Tracker 👋</h1>
+<h1 align="center">Welcome to React Theme 👋</h1>
 
 I used Redux and styled components in the project. It keeps the selected color in local storage and starts with the selected theme at next login.
 
