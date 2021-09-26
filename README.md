@@ -33,7 +33,7 @@ yarn start
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/farukipekcom/crypto-tracker/issues). You can also take a look at the [contributing guide](https://github.com/farukipekcom/crypto-tracker/issues).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/farukipekcom/react-theme/issues). You can also take a look at the [contributing guide](https://github.com/farukipekcom/react-theme/issues).
 
 ## Show your support
 
